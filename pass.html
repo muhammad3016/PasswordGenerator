@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD GENERATER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h1 class="main-heading">
+        Random Password Generator
+    </h1>
+    <div class="line"></div>
+    <div class="main">
+        <div class="box">
+            <span id="pass-box">Generated Password</span>
+
+            <div class="row">
+                <div class="left">
+                    Password Length
+                </div>
+                <div class="right">
+                    <input type="number" name="" id="total-char" max="14" min="6" value="8">
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="upper-case">
+                    <div class="left">
+                        Uppercase Character
+                    </div>
+                </label>
+                <div class="right">
+                    <input type="checkbox" class="ch-box" name="" id="upper-case" chacked>
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="lower-case">
+                    <div class="left">
+                        Lowercase Character
+                    </div>
+                </label>
+                <div class="right">
+                    <input type="checkbox" class="ch-box" name="" id="lower-case" chacked>
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="numbers">
+                    <div class="left">
+                        Number Character
+                    </div>
+                </label>
+                <div class="right">
+                    <input type="checkbox" class="ch-box" name="" id="numbers" chacked>
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="symbols">
+                    <div class="left">
+                        Special Character
+                    </div>
+                </label>
+                <div class="right">
+                    <input type="checkbox" class="ch-box" name="" id="symbols" chacked>
+                </div>
+            </div>
+
+            <div class="row">
+                <button id="btn"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M.5 9a2 2 0 012-2h7a2 2 0 012 2v5a2 2 0 01-2 2h-7a2 2 0 01-2-2V9z"></path>
+                        <path fill-rule="evenodd" d="M8.5 4a3.5 3.5 0 117 0v3h-1V4a2.5 2.5 0 00-5 0v3h-1V4z"
+                            clip-rule="evenodd"></path>
+                    </svg>Generate Password</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="pass.js"></script>
+</body>
+
+</html>
